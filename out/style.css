@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400&display=swap");
+body {
+  background-color: #bc865c;
+  padding: 50px;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.upper-box {
+  width: 100%;
+  height: 90%;
+  border-top: 2px solid #fffcf7;
+  border-left: 2px solid #fffcf7;
+  border-right: 2px solid #fffcf7;
+  display: flex;
+}
+
+.bottom-box {
+  width: 100%;
+  height: 10%;
+  border-bottom: 2px solid #fffcf7;
+  border-left: 2px solid #fffcf7;
+  border-right: 2px solid #fffcf7;
+  background-color: #fffcf7;
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  color: #bc865c;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.left-box {
+  width: 50%;
+  height: 100%;
+  color: #fffcf7;
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.3vw;
+  letter-spacing: 2px;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+  color: #fffcf7;
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.3vw;
+  letter-spacing: 2px;
+}
+
+/* hamburger */
+.center {
+  background-color: #fffcf7;
+  position: absolute;
+  width: 65px;
+  height: 60px;
+  padding: 11px 15px 0 16px;
+  top: 20px;
+  right: 25px;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: #bc865c;
+  content: "";
+  display: block;
+  height: 5px;
+  border-radius: 0px;
+  margin: 6px 0;
+  transition: 0.5s;
+}
+
+.center:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.center:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.center:hover div {
+  transform: scale(0);
+}
+
+.center:hover {
+  cursor: pointer;
+}
+
+.square {
+  width: 90%;
+  height: 80vh;
+  background-color: #242d38;
+}
+
+/* mobil */
+@media (max-width: 900px) {
+  .upper-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-box {
+    font-size: 3vw;
+  }
+  .left-box {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5vw;
+  }
+  .right-box {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5vw;
+    justify-content: flex-start;
+  }
+}
+/*# sourceMappingURL=style.css.map */
